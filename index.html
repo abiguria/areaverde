@@ -118,6 +118,9 @@ svg.sec text{font-family:var(--mono);font-size:9px;fill:var(--mute)}
 .phase div{border:1px solid var(--line);border-radius:4px;padding:12px 12px 14px;background:rgba(7,9,12,.45)}
 .phase .n{font-family:var(--mono);font-size:10px;letter-spacing:.14em;color:var(--acc)}
 .cell span .tag,.flow span .tag{display:inline-block;margin-top:0}
+svg#strip text{font-size:10px}
+#stripflow{animation:dash 1.2s linear infinite}@keyframes dash{to{stroke-dashoffset:-32}}
+@media (prefers-reduced-motion:reduce){#stripflow{animation:none}}
 .phase b{display:block;font-family:var(--serif);font-weight:400;font-size:22px;line-height:1.05;margin:6px 0 6px}
 .phase span{font-size:12px;color:var(--mute);line-height:1.35;display:block}
 </style>
@@ -136,101 +139,113 @@ svg.sec text{font-family:var(--mono);font-size:9px;fill:var(--mute)}
 </div>
 <div class="galtitle" id="galt">Imagen objetivo</div>
 
-<!-- 0 portada -->
+<!-- 0 ciudad -->
 <section class="slide">
-  <div class="kick">Km 7 · Carretera a El Salvador</div>
-  <h1>Del terreno<br><em>al destino</em></h1>
-  <p class="lead">Una propiedad familiar entre zona 10 y zona 15 que puede pasar de ser un terreno quieto a un lugar al que la gente llega todos los días.</p>
+  <div class="kick">Ciudad de Guatemala · Km 7 CA-1 Oriente</div>
+  <h1>Stop &amp; shop<br><em>de bajada</em></h1>
+  <p class="lead">Un terreno familiar en el carril por donde baja cada mañana el tráfico del oriente hacia zona 10, 14 y 15.</p>
   <div class="coord">14.5794° N · 90.4870° O</div>
 </section>
-<!-- 1 fly-in -->
+<!-- 1 acercamiento -->
 <section class="slide">
   <div class="kick">Ubicación</div>
-  <h2>En el corredor<br><em>de entrada a la ciudad</em></h2>
-  <p class="lead">Al final del Boulevard Los Próceres, frente a la lotificación Las Delicias, sobre el carril que baja hacia zona 10.</p>
-  <div class="src">Fuente: Avalúo C-672-2016-MAR, Ingenieros Valuadores S.A.</div>
+  <h2>Entre Los Próceres<br><em>y Vista Hermosa</em></h2>
+  <p class="lead">El terreno está entre el final del Boulevard Los Próceres y el trébol de Vista Hermosa, sobre el carril de entrada a la ciudad. Al lado hay una gasolinera y un edificio médico.</p>
+  <div class="src">Fuente: Avalúo C-672-2016-MAR, Ingenieros Valuadores S.A. (descripción del sector y croquis).</div>
 </section>
 <!-- 2 terreno -->
 <section class="slide">
   <div class="kick">El terreno</div>
   <div class="big" data-count="28333">0<small>m²</small></div>
-  <p class="lead">Un solo predio, 333 m de frente continuo a la carretera y un bosque de ladera que nadie puede tapar.</p>
+  <p class="lead">Un solo predio con 333 m de frente continuo a la carretera, todos sobre el carril de bajada.</p>
   <div class="grid">
     <div class="cell"><b data-count="333">0</b><span>m de frente vial <span class="tag m">medido</span></span></div>
     <div class="cell"><b>2.8</b><span>ha · 40,549 v² <span class="tag p">plano</span></span></div>
   </div>
-  <div class="src">Polígono reconstruido de la tabla de rumbos del plano topográfico (39 vértices, cierre &lt; 1 mm), ubicado con los bancos Br-1/Br-2 en GTM. Frente medido 333.0 m; el avalúo indica 333.03 m. Registro: 28,325.30 m².</div>
+  <div class="src">Polígono reconstruido de la tabla de rumbos del plano topográfico (39 vértices, cierre &lt; 1 mm), ubicado con los bancos Br-1/Br-2 en GTM. Frente medido 333.0 m; el avalúo indica 333.03 m.</div>
 </section>
-<!-- 3 tráfico -->
+<!-- 3 tráfico volumen + horario -->
 <section class="slide">
-  <div class="kick">Tráfico vehicular</div>
+  <div class="kick">Tráfico · volumen y hora</div>
   <div class="big" data-count="65000">0<small>veh/día</small></div>
-  <p class="lead">Pasan por el tramo km 4–15, donde está el terreno. El frente da al carril de entrada a la ciudad: es el trayecto de la mañana hacia el trabajo y el colegio.</p>
+  <p class="lead">Ese es el flujo diario del tramo km 4–15, donde está el terreno. De 5:00 a 8:30 la carretera abre carriles reversibles hacia la capital: la bajada de la mañana pasa por el frente.</p>
   <div class="grid">
-    <div class="cell"><b>333 m</b><span>de vitrina continua a ese flujo</span></div>
-    <div class="cell"><b>&gt;130,000</b><span>estimación de prensa 2026 para toda la carretera <span class="tag p">publicado</span></span></div>
+    <div class="cell"><b>5:00–8:30</b><span>carriles reversibles hacia la capital <span class="tag p">publicado</span></span></div>
+    <div class="cell"><b>&gt;130,000</b><span>estimación de prensa 2026, toda la carretera <span class="tag p">publicado</span></span></div>
   </div>
-  <div class="src">Emetra (Municipalidad de Guatemala) citado por Soy502, dic. 2022: “más de 65 mil vehículos diarios” km 4–15. Emisoras Unidas, feb. 2026: “más de 130,000 vehículos por día” (sin método publicado). Recomendado: aforo propio frente al predio.</div>
+  <div class="src">Emetra citado por Soy502 (dic. 2022): “más de 65 mil vehículos diarios” km 4–15. Horario reversible: PMT, recogido por apartamentosmodernos.com (2026). Emisoras Unidas (feb. 2026): “más de 130,000” sin método publicado. Pendiente: aforo propio por sentido y por hora frente al predio.</div>
 </section>
-<!-- 4 punto medio -->
+<!-- 4 tráfico origen -->
 <section class="slide">
-  <div class="kick">Proximidad</div>
-  <h2>El punto medio<br><em>entre zona 10 y zona 15</em></h2>
+  <div class="kick">Tráfico · de dónde viene</div>
+  <h2>Tres municipios<br><em>bajan por aquí</em></h2>
   <div class="flow">
-    <div><b>1.9</b><span>km a Vista Hermosa, zona 15</span></div>
-    <div><b>2.8</b><span>km a la Universidad del Valle</span></div>
-    <div><b>3.1</b><span>km a la Zona Viva, zona 10</span></div>
-    <div><b>3.5</b><span>km a Cayalá, zona 16</span></div>
+    <div><b>90k</b><span>San José Pinula</span></div>
+    <div><b>88k</b><span>Santa Catarina Pinula</span></div>
+    <div><b>65k</b><span>Fraijanes</span></div>
   </div>
-  <div class="src">Distancias en línea recta desde el centroide del predio <span class="tag e">estimado</span>. Los puntos de referencia son aproximados; verificar en sitio.</div>
-</section>
-<!-- 5 POT -->
-<section class="slide">
-  <div class="kick">Lo que permite el POT</div>
-  <h2>Un terreno,<br><em>tres alturas</em></h2>
-  <div class="legend">
-    <div><i style="background:#c9573f"></i>G5 · hasta 64 m<b>6,747 m²</b></div>
-    <div><i style="background:#a3c58f"></i>G1 · hasta 16 m<b>5,452 m²</b></div>
-    <div><i style="background:#3f6b4a"></i>G0 · natural / ladera<b>15,346 m²</b></div>
-  </div>
-  <p class="lead">Más de la mitad del predio queda como ladera y bosque. Lo edificable está en la franja plana del frente, justo donde pasa el tráfico.</p>
-  <div class="src">Consulta POT No. 450369, Municipalidad de Guatemala, 31/03/2016 · catastral 100246001. Las franjas no se dibujan: el mapa POT no está georreferenciado.</div>
-</section>
-<!-- 6 planta conjunto -->
-<section class="slide">
-  <div class="kick">Planta de conjunto</div>
-  <h2>Dos bloques<br><em>y un frente de servicio</em></h2>
-  <p class="lead">Un sótano en L sigue la curva de la carretera. Encima, dos bloques comerciales y residenciales. En la punta oriente, tres módulos drive-thru.</p>
   <div class="grid">
-    <div class="cell"><b data-count="5968">0</b><span>m² de sótano por nivel <span class="tag m">medido</span></span></div>
-    <div class="cell"><b data-count="2237">0</b><span>m² de huella a nivel calle <span class="tag m">medido</span></span></div>
+    <div class="cell"><b>≈ 325</b><span>paradas al día por cada 1 % del flujo de bajada <span class="tag e">escenario</span></span></div>
+    <div class="cell"><b>243k</b><span>habitantes aguas arriba del terreno</span></div>
   </div>
-  <div class="src">Digitalizado de Plantas de Entrega pp. 1–5. Control: las áreas medidas de los locales difieren menos de 3 % de las del plano (L1 777 → 760 m², L8 542 → 525 m²).</div>
+  <div class="src">Población proyectada a 2023 (INE vía citypopulation.de). Escenario: 65,000 ÷ 2 sentidos = 32,500 veh/día de bajada × 1 %. Es aritmética, no una tasa de captura medida.</div>
 </section>
-<!-- 7 drive-thru -->
+<!-- 5 proximidad malls -->
+<section class="slide">
+  <div class="kick">Proximidad · centros comerciales</div>
+  <h2>Rodeado de malls,<br><em>todos de destino</em></h2>
+  <div class="flow">
+    <div><b>3.1</b><span>km · Oakland Mall, zona 10</span></div>
+    <div><b>3.5</b><span>km · Paseo Cayalá, zona 16</span></div>
+    <div><b>3.6</b><span>km · Plaza Fontabella, zona 10</span></div>
+    <div><b>4.7</b><span>km · Pradera Concepción, km 15.5</span></div>
+  </div>
+  <div class="src">Distancias en línea recta desde el centroide. Pradera Concepción: coordenadas de directorio.guatemala.com. El resto son ubicaciones aproximadas <span class="tag e">estimado</span>. Para llegar a cualquiera de los cuatro hay que salirse del trayecto y estacionar.</div>
+</section>
+<!-- 6 corredor -->
+<section class="slide" style="width:min(620px,100%)">
+  <div class="kick">El corredor de bajada</div>
+  <h2>Los centros comerciales<br><em>se quedan arriba</em></h2>
+  <svg class="sec" id="strip" viewBox="0 0 520 150" role="img" aria-label="Corredor km 19 a km 0: centros comerciales entre km 14.5 y 19.5; el terreno en km 7">
+    <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#f3efe7"/></marker></defs>
+    <line x1="20" y1="70" x2="500" y2="70" stroke="#6d6a63" stroke-width="6" stroke-linecap="round"/>
+    <line id="stripflow" x1="20" y1="70" x2="496" y2="70" stroke="#f3efe7" stroke-width="2" stroke-dasharray="6 10" marker-end="url(#ar)"/>
+    <rect x="20" y="58" width="126" height="24" rx="3" fill="#d39a5c" opacity=".22"/>
+    <text x="22" y="22">km 19.5 ← CENTROS COMERCIALES → km 14.5</text>
+    <circle cx="44" cy="70" r="5" fill="#d39a5c"/><text x="34" y="100">Novitá</text><text x="34" y="111">km 19</text>
+    <circle cx="116" cy="70" r="5" fill="#d39a5c"/><text x="92" y="100">Pradera C.</text><text x="98" y="111">km 15.5</text>
+    <circle cx="140" cy="70" r="4" fill="#d39a5c" opacity=".8"/><text x="128" y="126">Condado C. ≈ km 15</text>
+    <circle cx="164" cy="70" r="3" fill="#a8a49b"/><text x="150" y="48">Paso a desnivel km 13.5</text>
+    <circle cx="308" cy="70" r="9" fill="#e6c35c"/><circle cx="308" cy="70" r="15" fill="none" stroke="#e6c35c" stroke-width="1.2"/>
+    <text x="285" y="100" style="fill:#e6c35c;font-size:11px">KM 7 · EL TERRENO</text><text x="276" y="113">stop &amp; shop de bajada</text>
+    <circle cx="380" cy="70" r="3" fill="#a8a49b"/><text x="352" y="48">Los Próceres ≈ km 4</text>
+    <text x="440" y="100">ZONA 10</text><text x="440" y="111">km 0–3</text>
+  </svg>
+  <p class="lead">En la bajada entre el km 14.5 y la ciudad no aparece ningún centro comercial en las fuentes revisadas. El km 7 puede ser la parada rápida antes del tráfico de zona 10.</p>
+  <div class="src">Centros comerciales en km 14.5–19.5 (Pradera Concepción, Condado Concepción, Plaza Madero, The Village, más Paiz, La Torre y PriceSmart): apartamentosmodernos.com 2026. Plaza Novitá km 19: Encuentra24. Esquema sin escala exacta. Pendiente: levantamiento de comercios en el tramo km 4–14.</div>
+</section>
+<!-- 7 tipos de comercio -->
+<section class="slide" style="width:min(660px,100%)">
+  <div class="kick">Tipo de comercio</div>
+  <h2>No competir con el mall,<br><em>resolver el trayecto</em></h2>
+  <div class="phase">
+    <div><span class="n">DESTINO</span><b>Mall regional</b><span>Oakland, Cayalá, Pradera. Moda, cine y anclas. Visita planificada de 1–3 h.</span></div>
+    <div><span class="n">KM 7 · BAJADA</span><b>Conveniencia</b><span>Café, farmacia, banco, comida para llevar. Menos de 5 min, sin bajarse o con parqueo inmediato.</span></div>
+    <div><span class="n">KM 7 · NIVEL 2</span><b>Hub familiar</b><span>Actividades para niños, academias, gimnasio. Visita recurrente cada semana.</span></div>
+  </div>
+  <p class="lead">El mall compite por el fin de semana. El km 7 compite por el trayecto diario de ida y por la agenda de los hijos.</p>
+  <div class="src">Clasificación y mezcla <span class="tag e">propuesta</span>. Validar con un estudio de mercado y la oferta existente en ruta.</div>
+</section>
+<!-- 8 drive-thru -->
 <section class="slide">
   <div class="kick">Stop &amp; shop</div>
   <h2>Café, farmacia<br><em>y banco sin bajarse</em></h2>
-  <p class="lead">Tres módulos de unos 53 m² sobre el carril de entrada, antes de la rotonda. Son el primer contacto con el conjunto y su ingreso más rápido.</p>
+  <p class="lead">Tres módulos de unos 53 m² en la punta oriente, el primer punto del frente que encuentra quien baja. La parada se hace antes de la rotonda y se sigue hacia la ciudad sin retorno.</p>
   <div class="grid">
     <div class="cell"><b>3</b><span>módulos drive-thru <span class="tag m">plano</span></span></div>
     <div class="cell"><b>≈ 50 m</b><span>de carril de espera</span></div>
   </div>
-  <div class="src">Módulos tomados de Plantas de Entrega p. 4. Asignación café / farmacia / banco <span class="tag e">propuesta</span>. Por el carril de entrada, el flujo de la mañana es el natural; el regreso depende de retornos.</div>
-</section>
-<!-- 8 sótanos -->
-<section class="slide">
-  <div class="kick">Volumetría · bajo la calle</div>
-  <h2>El parqueo<br><em>se esconde en la ladera</em></h2>
-  <div class="legend">
-    <div><i style="background:var(--park)"></i>Sótanos 1, 2 y 3<b>17,905 m²</b></div>
-  </div>
-  <p class="lead">Tres niveles de parqueo bajo los bloques. Hacia el riachuelo quedan abiertos y ventilados; hacia la calle no se ven.</p>
-  <div class="grid">
-    <div class="cell"><b>≈ 560</b><span>plazas de parqueo <span class="tag e">estimado</span></span></div>
-    <div class="cell"><b>2</b><span>núcleos de elevadores y gradas</span></div>
-  </div>
-  <div class="src">Altura modelada 3.0 m por sótano. Plazas estimadas a 32 m² por plaza, incluida la circulación.</div>
+  <div class="src">Módulos tomados de Plantas de Entrega p. 4. Asignación café / farmacia / banco <span class="tag e">propuesta</span>. Revisar con un estudio de tránsito el carril de desaceleración y la reincorporación.</div>
 </section>
 <!-- 9 comercio -->
 <section class="slide">
@@ -241,59 +256,57 @@ svg.sec text{font-family:var(--mono);font-size:9px;fill:var(--mute)}
     <div><i style="background:var(--acc)"></i>Nivel calle · conveniencia y servicios<b>locales 1–8</b></div>
     <div><i style="background:var(--n2)"></i>Nivel 2 · hub familiar<b>locales 9–13</b></div>
   </div>
-  <p class="lead">Arriba: actividades para niños, academias y gimnasio. Las familias de zona 10 y zona 15 encuentran todo en un solo lugar a mitad de camino.</p>
-  <div class="src">4,216 m² rentables según planos (13 locales). Mezcla de usos <span class="tag e">propuesta</span>, por validar con un estudio de mercado. Altura modelada 4.5 m por nivel.</div>
+  <p class="lead">Debajo hay tres sótanos con unas 560 plazas, así que parar es fácil. El nivel 2 sirve de punto medio entre zona 10 y zona 15 para clases, actividades y gimnasio.</p>
+  <div class="src">4,216 m² rentables según planos (13 locales). 17,905 m² de sótanos; plazas <span class="tag e">estimado</span> a 32 m² por plaza. Mezcla de usos <span class="tag e">propuesta</span>.</div>
 </section>
-<!-- 10 residencial -->
+<!-- 10 vivienda + vistas -->
 <section class="slide">
-  <div class="kick">Volumetría · vivienda</div>
-  <h2>Vivienda<br><em>sobre el comercio</em></h2>
-  <div class="legend">
-    <div><i style="background:var(--acc)"></i>Comercio · 2 niveles<b>4,475 m²</b></div>
-    <div><i style="background:var(--res)"></i>Vivienda · 4 niveles, bloques A y B<b>12,854 m²</b></div>
-  </div>
-  <p class="lead">Unos 22 m sobre la calle, muy por debajo de los 64 m que permite G5. Las viviendas miran al bosque, que queda protegido.</p>
+  <div class="kick">Diferenciador · vistas</div>
+  <h2>Una vista<br><em>que nadie puede tapar</em></h2>
+  <p class="lead">La vivienda se levanta sobre el comercio y mira hacia el barranco. Ese frente es zona G0 del POT dentro del mismo predio: ahí no se puede construir.</p>
   <div class="grid">
+    <div class="cell"><b data-count="15346">0</b><span>m² sin edificar frente a las viviendas <span class="tag p">POT</span></span></div>
+    <div class="cell"><b>6</b><span>niveles sobre la calle; G5 permite hasta 64 m</span></div>
     <div class="cell"><b>≈ 90</b><span>viviendas <span class="tag e">estimado</span></span></div>
-    <div class="cell"><b>6</b><span>niveles sobre la calle</span></div>
+    <div class="cell"><b>12,854</b><span>m² residenciales en 4 niveles</span></div>
   </div>
-  <div class="src"><span class="tag e">concepto</span> Los planos compartidos no incluyen plantas residenciales. El volumen sigue la envolvente de cada bloque y los niveles de las imágenes objetivo. Viviendas estimadas con 80 % de eficiencia y 110 m² promedio.</div>
+  <div class="src">Consulta POT No. 450369 (2016): G0 15,346 m², G1 5,452 m² (16 m), G5 6,747 m² (64 m). <span class="tag e">concepto</span> Los planos no incluyen plantas residenciales; el volumen sigue las imágenes objetivo.</div>
 </section>
-<!-- 11 demanda propia -->
+<!-- 11 demanda -->
 <section class="slide">
   <div class="kick">Uso mixto</div>
   <h2>El conjunto<br><em>genera su propia demanda</em></h2>
   <div class="flow">
-    <div><b>65k</b><span>vehículos al día pasan frente al conjunto y paran en el drive-thru</span></div>
+    <div><b>32k</b><span>vehículos bajan cada día por el frente</span></div>
     <div><b>≈ 90</b><span>hogares viven arriba y compran abajo</span></div>
-    <div><b>13</b><span>locales y un hub familiar traen visitas de zona 10, 14 y 15</span></div>
-    <div><b>≈ 560</b><span>plazas de parqueo: llegar es fácil</span></div>
+    <div><b>13</b><span>locales y un hub familiar para zona 10, 14 y 15</span></div>
+    <div><b>≈ 560</b><span>plazas de parqueo: parar es fácil</span></div>
   </div>
-  <div class="src">Cada uso alimenta a los otros: el residente sostiene al comercio entre semana y el comercio le da valor a la vivienda. Cifras de hogares y plazas <span class="tag e">estimado</span>.</div>
+  <div class="src">La bajada llena el frente por la mañana, los residentes sostienen el comercio entre semana y el hub atrae familias por la tarde. 32k = 65,000 ÷ 2 sentidos <span class="tag e">estimado</span>.</div>
 </section>
 <!-- 12 galería -->
 <section class="slide" style="justify-content:flex-end;width:min(420px,100%)"></section>
-<!-- 13 beneficios -->
+<!-- 13 familia -->
 <section class="slide" style="width:min(640px,100%)">
   <div class="kick">Para la familia</div>
   <h2>Un activo quieto<br><em>que empieza a rendir</em></h2>
   <div class="phase">
-    <div><span class="n">FASE 1</span><b>Drive-thru</b><span>Inversión baja e ingreso temprano. Activa el frente y prueba la demanda.</span></div>
-    <div><span class="n">FASE 2</span><b>Comercio + parqueo</b><span>Renta de 13 locales y parqueo con anclas de servicio y el hub familiar.</span></div>
-    <div><span class="n">FASE 3</span><b>Vivienda</b><span>Venta o renta sobre una base comercial ya funcionando.</span></div>
+    <div><span class="n">FASE 1</span><b>Drive-thru</b><span>Inversión baja e ingreso temprano. Pone a prueba el flujo de bajada.</span></div>
+    <div><span class="n">FASE 2</span><b>Comercio + parqueo</b><span>Renta de 13 locales y del hub familiar, con parqueo.</span></div>
+    <div><span class="n">FASE 3</span><b>Vivienda</b><span>Venta o renta con las vistas como argumento, sobre un comercio que ya funciona.</span></div>
   </div>
   <div class="grid" style="grid-template-columns:repeat(3,minmax(0,1fr))">
     <div class="cell"><b>Q46 M</b><span>valor del terreno, avalúo 2016</span></div>
     <div class="cell"><b>15.3%</b><span>TIR del esquema comercial valuado en 2016</span></div>
-    <div class="cell"><b>54%</b><span>del predio queda como bosque</span></div>
+    <div class="cell"><b>333 m</b><span>de frente que hoy no produce</span></div>
   </div>
-  <div class="src">Fases <span class="tag e">propuesta</span>. El avalúo 2016 describe el terreno como “rústico, desocupado” y de venta “lenta”. La TIR de 15.3 % corresponde a un esquema distinto (tres edificios en renta, ancla EPA; H. Chávez, feb. 2016). El programa actual requiere su propio modelo financiero.</div>
+  <div class="src">Fases <span class="tag e">propuesta</span>. El avalúo 2016 describe el terreno como “rústico, desocupado” y de venta “lenta”. La TIR de 15.3 % corresponde a otro esquema (tres edificios en renta, ancla EPA; H. Chávez, feb. 2016). El programa actual requiere su propio modelo financiero.</div>
 </section>
 <!-- 14 cierre -->
 <section class="slide">
   <div class="kick">Tesis</div>
-  <h2>Donde pasa la ciudad,<br><em>que se quede</em></h2>
-  <p class="lead">Tráfico que ya existe, un punto medio entre dos zonas de alto poder adquisitivo y un programa que se alimenta solo: servicio rápido al frente, familia arriba y bosque atrás.</p>
+  <h2>Donde baja la ciudad,<br><em>que pare aquí</em></h2>
+  <p class="lead">Un flujo diario que ya existe, una bajada sin centros comerciales en ruta, un punto medio entre zona 10 y zona 15 y una vista protegida. El terreno ya tiene la demanda; falta el programa.</p>
   <div class="coord" style="margin-top:18px">Estrategia y diseño · TORUS<span style="color:var(--acc)">.</span></div>
   <div class="src">THINK. DESIGN. BUILD.</div>
 </section>
@@ -301,15 +314,16 @@ svg.sec text{font-family:var(--mono);font-size:9px;fill:var(--mute)}
 <section class="slide" style="width:min(660px,100%)">
   <div class="kick">Fuentes y método</div>
   <ul class="sources">
-    <li>Plantas de Entrega, pp. 1–5: sótanos, nivel calle, nivel 2 y módulos drive-thru. Digitalizadas a escala; las áreas se verificaron con las de los locales.</li>
-    <li>Avalúo C-672-2016-MAR, Ingenieros Valuadores S.A.: polígono, bancos GTM, áreas, frente y valor del terreno.</li>
+    <li>Plantas de Entrega, pp. 1–5 (sótanos, nivel calle, nivel 2, módulos drive-thru); áreas verificadas con las de los locales.</li>
+    <li>Avalúo C-672-2016-MAR, Ingenieros Valuadores S.A.: polígono, bancos GTM, frente, sector y valor.</li>
     <li>Consulta POT No. 450369, Municipalidad de Guatemala (31/03/2016).</li>
-    <li>Reporte de Valuación Proyecto Inmobiliario v2 (feb. 2016) y Anteproyecto Revisión EPA 22-10-15.</li>
-    <li>Tráfico: <a href="https://www.soy502.com/articulo/dura-experiencia-transitar-carretera-salvador-101476" target="_blank" rel="noopener">Soy502, dic. 2022 (cita a Emetra)</a> · <a href="https://emisorasunidas.com/nacional/2026/02/06/santa-catarina-pinula-estrena-paso-a-desnivel-senor-de-esquipulas/" target="_blank" rel="noopener">Emisoras Unidas, feb. 2026</a>.</li>
-    <li>Imágenes objetivo: renders “Las Delicias” del proyecto.</li>
-    <li>Mapa base: Esri World Imagery y World Boundaries &amp; Places. Motor: MapLibre GL JS 5.8.</li>
+    <li>Reporte de Valuación Proyecto Inmobiliario v2 (feb. 2016).</li>
+    <li>Tráfico: <a href="https://www.soy502.com/articulo/dura-experiencia-transitar-carretera-salvador-101476" target="_blank" rel="noopener">Soy502 / Emetra, 2022</a> · <a href="https://emisorasunidas.com/nacional/2026/02/06/santa-catarina-pinula-estrena-paso-a-desnivel-senor-de-esquipulas/" target="_blank" rel="noopener">Emisoras Unidas, 2026</a> · <a href="https://apartamentosmodernos.com/blog/casas-apartamentos-carretera-a-el-salvador-precios-condominios.php" target="_blank" rel="noopener">carriles reversibles y centros comerciales en ruta</a>.</li>
+    <li>Población: <a href="https://citypopulation.de/en/guatemala/admin/01__guatemala/" target="_blank" rel="noopener">citypopulation.de (INE, proyección 2023)</a>.</li>
+    <li>Pradera Concepción: <a href="https://directorio.guatemala.com/listado/pradera-concepcion.html" target="_blank" rel="noopener">directorio.guatemala.com</a>.</li>
+    <li>Imágenes objetivo: renders “Las Delicias” del proyecto. Mapa: Esri World Imagery y World Boundaries &amp; Places; MapLibre GL JS 5.8.</li>
   </ul>
-  <div class="src">Método: GTM (TM, λ₀ −90.5°, k 0.9998, FE 500 000) → WGS84. Los volúmenes son extrusiones de las huellas digitalizadas con entrepisos supuestos. Las plantas se ubicaron haciendo coincidir el borde de carretera del plano con el lindero; precisión estimada ±5 m.</div>
+  <div class="src">Método: GTM → WGS84; volúmenes extruidos de las huellas digitalizadas con entrepisos supuestos; plantas ubicadas haciendo coincidir el borde de carretera con el lindero (±5 m). Las ubicaciones de Oakland, Cayalá y Fontabella son aproximadas.</div>
 </section>
 
 <nav id="nav">
@@ -322,10 +336,10 @@ const GEO = {"site": {"type": "Feature", "properties": {}, "geometry": {"type": 
 const C = GEO.center;
 const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const ANCH = [
-  {n:'Zona 10 · <em>Zona Viva</em>',ll:[-90.5085,14.5985]},
-  {n:'Zona 15 · <em>Vista Hermosa</em>',ll:[-90.4830,14.5960]},
-  {n:'<em>UVG</em>',ll:[-90.4895,14.6045]},
-  {n:'<em>Cayalá</em> · z16',ll:[-90.4880,14.6105]}
+  {n:'<em>Oakland Mall</em> · z10',ll:[-90.5072,14.5996]},
+  {n:'<em>Paseo Cayalá</em> · z16',ll:[-90.4878,14.6112]},
+  {n:'<em>Fontabella</em> · z10',ll:[-90.5117,14.6007]},
+  {n:'<em>Pradera Concepción</em> · km 15.5',ll:[-90.454715,14.551282]}
 ];
 
 /* stars */
@@ -365,7 +379,7 @@ const map=new maplibregl.Map({container:'map',attributionControl:{compact:true},
         'fill-extrusion-color':['match',['get','kind'],'drive','#e6c35c','comercio1','#d39a5c','comercio2','#6fa8a3','#f2eee6'],
         'fill-extrusion-base':['get','base'],'fill-extrusion-height':['get','top'],'fill-extrusion-opacity':.95,'fill-extrusion-vertical-gradient':true}}
     ]},
-  center:[-60,8],zoom:1.3,interactive:true,maxPitch:80});
+  center:[-90.515,14.605],zoom:11.4,interactive:true,maxPitch:80});
 map.scrollZoom.disable();
 
 /* boundary trace */
@@ -392,11 +406,12 @@ let dashI=0,dashT;function flowAnim(on){clearInterval(dashT);if(!on||reduce)retu
 function mk(html,ll,cls='',anchor='bottom',off=[0,0]){const w=document.createElement('div');const d=document.createElement('div');d.className='lbl '+cls;d.innerHTML=html;w.appendChild(d);return {m:new maplibregl.Marker({element:w,anchor,offset:off}).setLngLat(ll),shown:false}}
 const L={A:mk('Bloque <em>A</em>',GEO.labels.A),B:mk('Bloque <em>B</em>',GEO.labels.B),
   F:mk('Frente <em>333 m</em>',GEO.front.geometry.coordinates[7]),
-  S:mk('Ladera · <em>bosque</em>',[C[0]-0.0006,C[1]+0.0011]),
-  T:mk('→ <em>hacia zona 10</em>',GEO.front.geometry.coordinates[11]),
+  T:mk('Bajada → <em>zona 10</em>',GEO.front.geometry.coordinates[11]),
+  Z10:mk('<em>Zona 10</em>',[-90.5085,14.5985],'pin'),Z15:mk('<em>Zona 15</em>',[-90.4830,14.5960],'pin'),
+  V:mk('Vista <em>protegida · G0</em>',[C[0]+0.0004,C[1]+0.0006]),
   D1:mk('<em>Café</em>',GEO.pads[0],'dt','left',[38,-14]),D2:mk('<em>Farmacia</em>',GEO.pads[1],'dt','left',[38,-14]),D3:mk('<em>Banco</em>',GEO.pads[2],'dt','left',[38,-14]),
-  K:mk('<em>Km 7</em> · el terreno',C)};
-ANCH.forEach((a,i)=>L['P'+i]=mk(a.n,a.ll,'pin'));
+  K:mk('<em>Km 7</em> · el terreno',C,'dt')};
+ANCH.forEach((a,i)=>L['P'+i]=mk(a.n,a.ll,'pin',i===0?'top':'bottom',i===0?[0,6]:[0,0]));
 function labels(keys){for(const k in L){const on=keys.includes(k);if(on&&!L[k].shown){L[k].m.addTo(map);L[k].shown=true}else if(!on&&L[k].shown){L[k].m.remove();L[k].shown=false}}}
 
 const fades={};
@@ -409,17 +424,17 @@ function countUp(root){root.querySelectorAll('[data-count]').forEach(el=>{const 
 
 /* slides: b = basement levels, v = above-ground levels (0 drive,1 N1,2 N2,3-6 vivienda) */
 const S=[
-  {cam:{center:[-82,12],zoom:2.1,pitch:0,bearing:0},dur:2600,nopad:1},
+  {cam:{center:[-90.505,14.598],zoom:12.2,pitch:0,bearing:0},ref:.95,fill:.6,labels:['K','Z10','Z15'],dur:1500},
   {fly:1},
-  {cam:{center:C,zoom:17.15,pitch:0,bearing:-28},boundary:1,fill:.12,front:1,labels:['F','S']},
+  {cam:{center:C,zoom:17.15,pitch:0,bearing:-28},boundary:1,fill:.12,front:1,labels:['F']},
   {cam:{center:C,zoom:16.6,pitch:50,bearing:-35},boundary:1,fill:.08,front:1,flow:1,labels:['T']},
-  {cam:{center:[-90.4935,14.5935],zoom:13.6,pitch:30,bearing:-10},boundary:1,fill:.35,spokes:1,ref:.85,labels:['K','P0','P1','P2','P3']},
-  {cam:{center:C,zoom:17.0,pitch:35,bearing:-20},boundary:1,fill:.06,labels:['S']},
-  {cam:{center:C,zoom:17.4,pitch:0,bearing:-28},boundary:1,fill:.03,foot:1,labels:['A','B']},
+  {cam:{center:[-90.4800,14.5700],zoom:13.2,pitch:30,bearing:-25},boundary:1,fill:.5,flow:1,ref:.85,labels:['K','T']},
+  {cam:{center:[-90.4870,14.5850],zoom:12.9,pitch:25,bearing:-10},boundary:1,fill:.5,spokes:1,ref:.85,labels:['K','P0','P1','P2','P3']},
+  {cam:{center:[-90.4712,14.5652],zoom:13.5,pitch:25,bearing:-20},boundary:1,fill:.5,flow:1,ref:.6,labels:['K','P3']},
+  {cam:{center:C,zoom:16.3,pitch:45,bearing:-20},boundary:1,fill:.05,v:3,ref:.4,labels:['K','Z10','Z15']},
   {cam:{center:GEO.pads[1],zoom:18.3,pitch:58,bearing:-20},boundary:1,v:1,lane:1,flow:1,labels:['D1','D2','D3']},
-  {cam:{center:C,zoom:17.55,pitch:62,bearing:-150},boundary:1,b:3,labels:[]},
   {cam:{center:C,zoom:17.6,pitch:60,bearing:25},boundary:1,v:3,lane:1,labels:['A','B']},
-  {cam:{center:C,zoom:17.45,pitch:64,bearing:-125},boundary:1,v:7,labels:['A','B'],orbit:1},
+  {cam:{center:[C[0]+0.0003,C[1]+0.0003],zoom:17.7,pitch:72,bearing:40},boundary:1,fill:.1,v:7,labels:['V']},
   {cam:{center:C,zoom:17.3,pitch:60,bearing:30},boundary:1,v:7,flow:1,front:1},
   {gallery:1,v:7},
   {cam:{center:C,zoom:17.2,pitch:55,bearing:-60},boundary:1,v:7},
@@ -438,13 +453,11 @@ function orbit(on){cancelAnimationFrame(orbitRAF);if(!on||reduce)return;let last
   map.once('moveend',()=>{if(S[cur].orbit)orbitRAF=requestAnimationFrame(step)})}
 
 async function flyIn(){flying=true;const steps=[
-  {center:[-90.3,15.6],zoom:5.2,pitch:0,bearing:0,duration:3000},
-  {center:[-90.52,14.62],zoom:10.2,pitch:20,bearing:-10,duration:3200},
-  {center:C,zoom:14.6,pitch:35,bearing:-20,duration:3000},
+  {center:[-90.495,14.588],zoom:14.2,pitch:35,bearing:-15,duration:2600},
   {center:C,zoom:17.15,pitch:0,bearing:-28,duration:2600}];
-  fade('ref','raster-opacity',.95,1200);
+  fade('ref','raster-opacity',.9,600);fade('site-fill','fill-opacity',.3);labels(['K']);
   for(const s of steps){if(cur!==1)break;await new Promise(r=>{map.flyTo({...s,padding:pad(1),curve:1.3,essential:true,duration:reduce?0:s.duration});map.once('moveend',r)})}
-  if(cur===1){fade('ref','raster-opacity',0,900);drawBoundary();bShown=true;fade('site-glow','line-opacity',.6);fade('site-fill','fill-opacity',.1)}
+  if(cur===1){labels([]);fade('ref','raster-opacity',0,900);fade('site-fill','fill-opacity',.1);drawBoundary();bShown=true;fade('site-glow','line-opacity',.6)}
   flying=false}
 
 function go(i){i=Math.max(0,Math.min(N-1,i));if(i===cur)return;cur=i;history.replaceState(null,'','#s'+(i+1));
@@ -455,8 +468,8 @@ function go(i){i=Math.max(0,Math.min(N-1,i));if(i===cur)return;cur=i;history.rep
   document.body.classList.toggle('full',!!s.full);
   orbit(false);
   if(s.gallery){labels([]);flowAnim(false);return}
-  if(s.fly){labels([]);hideBoundary();bShown=false;growTo('bsm',0);growTo('vols',0);
-    ['site-fill','front','flow','foot','foot-pb','spokes','lane'].forEach(l=>fade(l,l==='site-fill'||l==='foot'?'fill-opacity':'line-opacity',0));flowAnim(false);flyIn();return}
+  if(s.fly){hideBoundary();bShown=false;growTo('bsm',0);growTo('vols',0);
+    ['front','flow','foot','foot-pb','spokes','lane'].forEach(l=>fade(l,l==='site-fill'||l==='foot'?'fill-opacity':'line-opacity',0));flowAnim(false);flyIn();return}
   if(flying){map.stop();flying=false}
   if(s.boundary){if(!bShown){drawBoundary(1600);bShown=true}fade('site-glow','line-opacity',.45)}else{hideBoundary();bShown=false;fade('site-glow','line-opacity',0)}
   fade('site-fill','fill-opacity',s.fill||0);fade('front','line-opacity',s.front?.9:0);
